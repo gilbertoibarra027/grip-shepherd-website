@@ -84,8 +84,18 @@
         <tr><td>Standard grip (e.g. Golf Pride Tour Velvet)</td><td data-price="standardGrip">$7.99</td><td data-price="standardInstalled">$12.98</td></tr>
         <tr><td>Premium grip (e.g. Golf Pride MCC or Align)</td><td data-price="premiumGrip">$12.99</td><td data-price="premiumInstalled">$17.98</td></tr>
         <tr><td>Putter grips</td><td>from <span data-price="putterGripFrom">$15</span></td><td>+ labor</td></tr>
-        <tr><td>Bring your own grips</td><td>n/a</td><td>Labor only</td></tr>
-        <tr><td>Travel fee outside Weston</td><td colspan="2">TBD</td></tr>
+        <!-- confirm per order vs per club -->
+        <tr><td>Bring your own grips</td><td>+<span data-price="byoFee">$10</span> per order</td><td>Labor + fee</td></tr>
+      </tbody>
+    </table>
+    <h3 class="price-sub">Travel (measured from Weston, FL)</h3>
+    <table class="price-table">
+      <thead><tr><th>Distance</th><th>Travel fee</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td>0–<span data-num="zone1Max">10</span> mi</td><td>Free</td><td><span data-num="zone1MinClubs">5</span>-club minimum</td></tr>
+        <tr><td><span data-num="zone1Max">10</span>–<span data-num="zone2Max">20</span> mi</td><td><span data-price="zone2Fee">$15</span> flat</td><td>Waived at <span data-num="zone2Waive">13</span>+ clubs</td></tr>
+        <tr><td><span data-num="zone2Max">20</span>–<span data-num="zone3Max">30</span> mi</td><td><span data-price="zone3Fee">$25</span> flat</td><td>Waived at <span data-num="zone3Waive">20</span>+ clubs</td></tr>
+        <tr><td><span data-num="zone3Max">30</span>+ mi</td><td>Custom quote</td><td>or <span data-price="zone4MinOrder">$150</span> minimum order</td></tr>
       </tbody>
     </table>
   </div>
@@ -136,6 +146,7 @@
     <!-- DRAFT COPY for Rex to review: BYO grips FAQ -->
     <details><summary>Can I bring my own grips?</summary><p>Yes. If you already have grips you love, have them ready and we'll install them during your visit.</p></details>
     <details><summary>How much does a regrip cost?</summary><p>Regrip labor starts at <span data-price="labor">$4.99</span> per club. Grip prices depend on the grip you choose.</p></details>
+    <details><summary>Is there a travel fee?</summary><p>Within <span data-num="zone1Max">10</span> miles of Weston, travel is free with a <span data-num="zone1MinClubs">5</span>-club minimum. From <span data-num="zone1Max">10</span> to <span data-num="zone2Max">20</span> miles it's a <span data-price="zone2Fee">$15</span> flat fee, waived at <span data-num="zone2Waive">13</span>+ clubs; <span data-num="zone2Max">20</span> to <span data-num="zone3Max">30</span> miles is <span data-price="zone3Fee">$25</span>, waived at <span data-num="zone3Waive">20</span>+ clubs. Beyond <span data-num="zone3Max">30</span> miles we'll send a custom quote or require a <span data-price="zone4MinOrder">$150</span> minimum order.</p></details>
       </div>
 </section>
 

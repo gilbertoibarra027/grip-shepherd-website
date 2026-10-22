@@ -157,3 +157,4 @@ input:focus,select:focus,textarea:focus{border-color:var(--black)}
 .hero-media::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,var(--black) 0%,#0a0a0acc 45%,#0a0a0a33 100%)}
 @media(max-width:899px){.hero-media::before{background:linear-gradient(180deg,#0a0a0a66 0%,#0a0a0aaa 55%,#0a0a0aee 100%)}}
 .van-media img{object-position:80% center}
+.price-sub{font:700 1rem var(--f-sub);letter-spacing:.08em;text-transform:uppercase;margin:2rem 0 0}
