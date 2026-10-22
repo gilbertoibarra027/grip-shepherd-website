@@ -136,3 +136,14 @@ input:focus,select:focus,textarea:focus{border-color:var(--black)}
 .pricing-note{font-size:.8rem;opacity:.75;font-style:italic}
 .price-line{margin-top:12px;font-size:.9rem}
 @media(max-width:600px){.price-table{font-size:.85rem}.price-table th,.price-table td{padding:8px 4px}}
+
+/* Meet Gilberto */
+.meet{background:#fff;color:var(--black);padding:4rem 0}
+.meet-inner{display:grid;gap:2rem}
+.meet-photo{aspect-ratio:4/5;max-width:420px;width:100%;background:linear-gradient(180deg,#3a3a3a,#0a0a0a);display:grid;place-items:center;border-radius:2px}
+.meet-photo span{font:600 .8rem var(--f-sub);letter-spacing:.2em;text-transform:uppercase;color:#ffffff88;text-align:center;padding:1rem}
+.meet-sub{font:700 1.1rem var(--f-sub);letter-spacing:.06em;text-transform:uppercase;color:var(--char);margin:0 0 1rem}
+.meet-copy p{color:var(--char)}
+.meet-call{font:700 .9rem var(--f-sub);letter-spacing:.1em;text-transform:uppercase;color:var(--red);text-decoration:none}
+.meet-call:hover{text-decoration:underline}
+@media(min-width:900px){.meet-inner{grid-template-columns:minmax(0,5fr) minmax(0,7fr);align-items:center;gap:4rem}}
