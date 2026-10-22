@@ -1,8 +1,8 @@
 // SINGLE SOURCE OF TRUTH for prices.
 const PRICING={labor:4.99,standardGrip:7.99,premiumGrip:12.99,putterGripFrom:15,
- byoFee:10, // TODO confirm: per order vs per club
+ byoFee:10, // per order
  travel:{ // miles measured from Weston, FL
-  zone1:{maxMi:10,fee:0,minClubs:5},
+  zone1:{maxMi:15,fee:0,minClubs:5},
   zone2:{maxMi:20,fee:15,waiveAtClubs:13},
   zone3:{maxMi:30,fee:25,waiveAtClubs:20},
   zone4:{minOrder:150}}};
