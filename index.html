@@ -46,6 +46,7 @@
       <a href="#quote" class="btn btn-red">Book a Regrip <span aria-hidden="true">→</span></a>
       <a href="#services" class="btn btn-ghost">See Grip Options</a>
     </div>
+    <p class="small price-line">Regrip labor from <span data-price="labor">$4.99</span> per club. <em class="pricing-note">Pricing pending owner confirmation</em></p>
     <ul class="features">
       <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 7h12v9H2zM14 10h4l3 3v3h-7z"/><circle cx="6" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg><strong>Mobile Service</strong><span>We come to you.</span></li>
       <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l8 3v6c0 5-3.5 9-8 11-4.5-2-8-6-8-11V5z"/><path d="M8 12l3 3 5-6"/></svg><strong>Pro Installation</strong><span>Tour-level care.</span></li>
@@ -64,11 +65,32 @@
     <a href="#quote" class="btn btn-red">Book a Regrip <span aria-hidden="true">→</span></a>
   </div>
   <ul class="service-cards">
-    <li><div class="card-img ci1" aria-hidden="true"></div><h3>Choose Your Grip</h3><p>Top brands, standard to oversize.</p></li>
+    <li><div class="card-img ci1" aria-hidden="true"></div><h3>Choose Your Grip</h3><p><a href="#pricing">Standard or Premium, see pricing</a></p></li>
     <li><div class="card-img ci2" aria-hidden="true"></div><h3>Expert Install</h3><p>Aligned, sized, and cured right.</p></li>
     <li><div class="card-img ci3" aria-hidden="true"></div><h3>Back in the Bag</h3><p>No drop-off, no waiting days.</p></li>
   </ul>
 </section>
+
+<!-- STAGED PRICING: Pricing pending owner confirmation. Prices live only in pricing.js -->
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <p class="eyebrow">Pricing</p>
+    <h2 class="display">Simple, <span class="red">Per-Club Pricing.</span></h2>
+    <table class="price-table">
+      <thead><tr><th>Item</th><th>Price</th><th>Installed (per club)</th></tr></thead>
+      <tbody>
+        <tr><td>Labor (all tiers)</td><td><span data-price="labor">$4.99</span>/club</td><td>n/a</td></tr>
+        <tr><td>Standard grip (e.g. Golf Pride Tour Velvet)</td><td data-price="standardGrip">$7.99</td><td data-price="standardInstalled">$12.98</td></tr>
+        <tr><td>Premium grip (e.g. Golf Pride MCC or Align)</td><td data-price="premiumGrip">$12.99</td><td data-price="premiumInstalled">$17.98</td></tr>
+        <tr><td>Putter grips</td><td>from <span data-price="putterGripFrom">$15</span></td><td>+ labor</td></tr>
+        <tr><td>Bring your own grips</td><td>n/a</td><td>Labor only</td></tr>
+        <tr><td>Travel fee outside Weston</td><td colspan="2">TBD</td></tr>
+      </tbody>
+    </table>
+    <p class="small pricing-note">Pricing pending owner confirmation.</p>
+  </div>
+</section>
+
 
 <section class="mobile-band" id="about">
   <div class="van-media" role="img" aria-label="Placeholder for photo: Grip Shepherd service van"></div>
@@ -99,6 +121,8 @@
     <details><summary>What area do you serve?</summary><p>We serve Weston and surrounding Broward County. Not sure if you're in range? Contact us and we'll let you know.</p></details>
     <!-- DRAFT COPY for Rex to review: BYO grips FAQ -->
     <details><summary>Can I bring my own grips?</summary><p>Yes. If you already have grips you love, have them ready and we'll install them during your visit.</p></details>
+    <!-- Pricing pending owner confirmation -->
+    <details><summary>How much does a regrip cost?</summary><p>Regrip labor starts at <span data-price="labor">$4.99</span> per club. Grip prices depend on the grip you choose.</p></details>
       </div>
 </section>
 
@@ -136,6 +160,7 @@
     <p class="small">© 2026 Grip Shepherd. Prototype v1, not for publication.</p>
   </div>
 </footer>
+<script src="pricing.js" defer></script>
 <script src="main.js" defer></script>
 </body>
 </html>
