@@ -160,10 +160,13 @@
       <p class="placeholder-note">Hours: Mon–Fri, 9 AM – 5 PM</p>
     </div>
     <!-- Quote requests should deliver to Gilberto@gripshepherd.com once a form backend is approved. -->
-    <form id="quote-form" novalidate>
-      <p class="proto-note" role="note">Prototype form: nothing is submitted.</p>
+    <form id="quote-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+      <input type="hidden" name="access_key" value="e5b1ed30-9d4d-4cde-8f6a-7b4852f10bd1">
+      <input type="hidden" name="subject" value="New Grip Shepherd quote request">
+      <input type="hidden" name="from_name" value="Grip Shepherd Website">
+      <input type="checkbox" name="botcheck" class="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
       <div class="field"><label for="name">Name *</label><input id="name" name="name" autocomplete="name" required><span class="err" id="name-err"></span></div>
-      <div class="field"><label for="phone">Phone *</label><input id="phone" name="phone" type="tel" autocomplete="tel" required pattern="[\d\s()+.\-]{10,}"><span class="err" id="phone-err"></span></div>
+      <div class="field"><label for="phone">Phone *</label><input id="phone" name="phone" type="tel" autocomplete="tel" required pattern="[\d\s\(\)\+\.\-]{10,}"><span class="err" id="phone-err"></span></div>
       <div class="field"><label for="email">Email *</label><input id="email" name="email" type="email" autocomplete="email" required><span class="err" id="email-err"></span></div>
       <div class="field"><label for="zip">ZIP code *</label><input id="zip" name="zip" inputmode="numeric" autocomplete="postal-code" required pattern="\d{5}"><span class="err" id="zip-err"></span></div>
       <div class="field"><label for="clubs">Number of clubs *</label><input id="clubs" name="clubs" type="number" min="1" max="30" required><span class="err" id="clubs-err"></span></div>

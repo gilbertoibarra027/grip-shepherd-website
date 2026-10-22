@@ -120,6 +120,7 @@ input:focus,select:focus,textarea:focus{border-color:var(--black)}
 [aria-invalid="true"]{border-color:#c40000;background:#fff5f5}
 .err{display:block;color:#c40000;font-size:.8rem;min-height:1em;margin-top:.2rem}
 .form-status{margin:0;font-weight:600}
+.form-status.ok{color:#0a7a2f}.form-status.bad{color:#c40000}
 
 /* Footer */
 .site-footer{background:var(--black);border-top:1px solid #ffffff1a;padding:2.5rem 0;text-align:center;color:#aaa}
