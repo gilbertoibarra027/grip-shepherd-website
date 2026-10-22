@@ -166,3 +166,10 @@ input:focus,select:focus,textarea:focus{border-color:var(--black)}
 .quote-bg img{width:100%;height:100%;object-fit:cover;object-position:center 40%;display:block}
 .quote-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#0a0a0af0 0%,#0a0a0ad0 50%,#0a0a0a99 100%)}
 @media (max-width:949px){.quote-bg::after{background:#0a0a0ad9}}
+
+/* Scroll reveal: only active once JS adds .js-reveal to <html> */
+.js-reveal .rv{opacity:0;transform:translateY(20px);transition:opacity .6s ease-out,transform .6s ease-out;transition-delay:var(--rv-d,0ms)}
+.js-reveal .rv.in{opacity:1;transform:none}
+.js-reveal .hero-inner{animation:rv-fade .6s ease-out both}
+@keyframes rv-fade{from{opacity:0}to{opacity:1}}
+@media (prefers-reduced-motion:reduce){.js-reveal .rv{opacity:1;transform:none;transition:none}.js-reveal .hero-inner{animation:none}}
